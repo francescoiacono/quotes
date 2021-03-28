@@ -1,0 +1,82 @@
+.SubmitQuote {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.MainContainer {
+  display: flex;
+  align-items: center;
+}
+
+.InputContainer {
+  margin: 0 30px;
+}
+
+.InputContainer input {
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  background-color: #a5a5a5;
+  width: 200px;
+  padding: 10px;
+  text-align: right;
+}
+
+.InputContainer button {
+  border: 2px solid #a5a5a5;
+  height: 30px;
+  border-radius: 5px;
+  background-color: black;
+  color: #a5a5a5;
+  width: 80px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.5s ease-out;
+}
+
+.InputContainer button:hover {
+  background-color: #a5a5a5;
+  color: #000;
+}
+
+.InputContainer button:active {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  box-shadow: 0px 0px 10px white;
+}
+
+.InputContainer input,
+.InputContainer button {
+  margin: 0 5px;
+}
+
+.Message {
+  color: #0b8100;
+  margin: 20px;
+}
+
+.Visible {
+  display: inline;
+}
+
+.NotVisible {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .MainContainer {
+    display: inline;
+  }
+  .SubmitQuote {
+    flex-direction: column;
+  }
+  .InputContainer {
+    padding: 10px;
+    display: flex;
+  }
+}

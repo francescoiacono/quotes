@@ -1,0 +1,44 @@
+.Footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  padding: 10px;
+  color: #a5a5a5;
+  font-size: 0.7em;
+  z-index: 0;
+}
+
+.SocialMediaContainer,
+.FooterContainer {
+  display: flex;
+  margin-left: 5px;
+}
+
+.SocialMediaContainer {
+  align-items: center;
+}
+
+.FooterContainer {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.SocialMediaContainer img {
+  margin: 0 5px;
+  width: 20px;
+  opacity: 0.8;
+}
+
+.PortfolioLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.PortfolioLink:hover {
+  text-decoration: underline;
+}
+
+.Invert {
+  filter: invert();
+}

@@ -1,0 +1,35 @@
+.InfoPage {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 1em;
+  height: 100vh;
+  color: #a5a5a5;
+
+  scroll-snap-align: center;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 100px;
+}
+
+.Title {
+  font-size: 8em;
+  font-weight: lighter;
+}
+
+.Deets {
+  font-size: 4em;
+  margin: 50px;
+}
+
+@media (max-width: 768px) {
+  .Deets {
+    margin: 20px;
+  }
+}

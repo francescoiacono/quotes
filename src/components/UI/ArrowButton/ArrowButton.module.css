@@ -1,0 +1,48 @@
+.Button {
+  background: transparent;
+  border: none;
+}
+
+.ArrowButton {
+  width: 45px;
+  padding: 5px;
+  cursor: pointer;
+  animation-name: shake;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+
+  transition: transform 200ms ease;
+}
+
+.ArrowButton:hover {
+  transition: transform 500ms ease;
+  transform: translate(0, 5px);
+}
+
+@keyframes shake {
+  20% {
+    transform: translate(0, 10px);
+  }
+  40% {
+    transform: translate(0, -10px);
+  }
+  60% {
+    transform: translate(0, 5px);
+  }
+  80% {
+    transform: translate(0, -5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes rot-animation {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
